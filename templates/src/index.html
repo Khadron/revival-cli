@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script id="tpl_example" type="text/x-dot-template">
+        <h1>
+            {{=it}}
+        </h1>
+    </script>
+</head>
+
+<body>
+    <div id="app"></div>
+</body>
+<script type="text/javascript" src="./js/sea.js?rev=@@hash"></script>
+<script type="text/javascript">
+    seajs.use('app', function(app) {
+        app.init()
+            .load(['vendor'])
+            .render()
+            .run("khadron");
+    });
+</script>
+
+</html>

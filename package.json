@@ -1,0 +1,22 @@
+{
+    "name": "revival-cli",
+    "version": "0.1.0",
+    "description": "revival-cli 前端CLI开发工具，使你遗留老的、旧的项目焕发新的生命力",
+    "main": "index.js",
+    "bin": {
+        "revival": "./bin/revival"
+    },
+    "scripts": {
+        "test": "node ./bin/revival init"
+    },
+    "author": "khadron",
+    "license": "ISC",
+    "dependencies": {
+        "bower": "^1.8.0",
+        "chalk": "^2.1.0",
+        "commander": "^2.11.0",
+        "download-git-repo": "^1.0.1",
+        "inquirer": "^3.2.3",
+        "ora": "^1.3.0"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "name": "revival",
+    "version": "1.0.0",
+    "description": "基于Gulp自动化构建框架，使你遗留老的、旧的项目焕发新的生命力",
+    "main": "gulpfile.js",
+    "scripts": {
+        "dev": "gulp build:dev",
+        "prod": "gulp build",
+        "server": "gulp dev:local",
+        "remote": "gulp dev:remote"
+    },
+    "author": "khadron",
+    "license": "ISC",
+    "dependencies": {
+        "bower": "^1.8.0",
+        "browser-sync": "^2.18.13",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^4.0.0",
+        "gulp-cache": "^0.4.6",
+        "gulp-clean": "^0.3.2",
+        "gulp-clean-css": "^3.8.0",
+        "gulp-cmd-pack": "^1.0.9",
+        "gulp-concat": "^2.6.1",
+        "gulp-htmlmin": "^3.0.0",
+        "gulp-imagemin": "^3.3.0",
+        "gulp-jshint": "^2.0.4",
+        "gulp-notify": "^3.0.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-rev-append": "^0.1.8",
+        "gulp-sass": "^3.1.0",
+        "gulp-sequence": "^0.4.6",
+        "gulp-sftp": "^0.1.5",
+        "gulp-uglify": "^3.0.0",
+        "gulp-zip": "^4.0.0",
+        "imagemin-pngquant": "^5.0.1",
+        "jshint": "^2.9.5",
+        "seajs": "^3.0.2",
+        "stream-combiner2": "^1.1.1"
+    }
+}

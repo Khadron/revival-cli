@@ -1,0 +1,57 @@
+#!/usr/bin/env node --harmony
+
+'use strict'
+
+const { resolve } = require("path");
+const res = (cmd) => resolve(__dirname, "../commands", cmd);
+const program = require("commander");
+const config = require("../package");
+
+program
+    .version(config.version);
+
+program.usage("<command>");
+
+program
+    .command("init")
+    .description("Generate a new project")
+    .alias("i")
+    .action(() => {
+        require(res("init"));
+    });
+
+program
+    .command("list")
+    .description("List all the templates")
+    .alias("l")
+    .action(() => {
+        require(res("list"))
+    });
+
+program
+    .command("add")
+    .description("save a new template")
+    .alias("a")
+    .action(() => {
+        require(res("add"))
+    });
+
+program.command("remove")
+    .description("remove a template")
+    .alias("r")
+    .action(() => {
+        require(res("remove"))
+    });
+
+program.command("pack")
+    .description("Download third party packages from the Internet")
+    .alias("p")
+    .action(function() {
+        require(res("pack"))(Array.prototype.slice.call(arguments, 0, arguments.length - 1));
+    });
+
+program.parse(process.argv);
+
+if (!program.args.length) {
+    program.help();
+}

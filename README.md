@@ -11,4 +11,6 @@ revival-cli 前端CLI开发工具，使你遗留老的、旧的项目焕发新�
 * 特色的包管理
 * 更多
 
-##使用
+## API
+
+## Hello world
